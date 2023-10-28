@@ -1,0 +1,1 @@
+export const REVENUE_CHART_HEIGHT = 350;

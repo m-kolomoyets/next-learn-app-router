@@ -1,14 +1,13 @@
-import { inter } from "@/app/ui/fonts";
+import type { NextLayout } from "./lib/types";
+import { inter } from "@/app/lib/fonts";
 import "@/app/ui/global.css";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+const RootLayout: NextLayout = ({ children }) => {
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased`}>{children}</body>
     </html>
   );
-}
+};
+
+export default RootLayout;
